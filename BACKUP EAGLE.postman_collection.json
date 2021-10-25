@@ -1,0 +1,1677 @@
+{
+	"info": {
+		"_postman_id": "d26ad5e2-a3d6-4e5d-ad02-19560c22a0f7",
+		"name": "BACKUP EAGLE REST-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Mail Recipient",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/mailrecipients/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mailrecipients",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/mailrecipients/add",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mailrecipients",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/mailrecipients/update",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mailrecipients",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/mailrecipients/delete?id={{recipientId}}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mailrecipients",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{recipientId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mail Recipient Group",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/mailrecipientgroups/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mailrecipientgroups",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Mailing Group\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/mailrecipientgroups/add",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mailrecipientgroups",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/mailrecipientgroups/update",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mailrecipientgroups",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/mailrecipientgroups/delete?id={{reciepientGroupId}}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mailrecipientgroups",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{reciepientGroupId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "User Defined Group",
+			"item": [
+				{
+					"name": "List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/udgs/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"udgs",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/udgs/add",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"udgs",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"515\",\n    \"name\": \"UDG-1\",\n    \"elements\": [\n        {\n            \"baServerName\": \"Server-2\",\n            \"baNodeName\": \"*\",\n            \"baNodeGroupName\": \"*\",\n            \"baNodeOs\": \"*\",\n            \"baNodeContact\": \"*\",\n            \"baNodeActive\": \"*\",\n            \"baServerActive\": \"*\",\n            \"isExclude\": \"false\",\n            \"Custom1\": \"Value1\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/udgs/update",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"udgs",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/udgs/delete?id={{udgId}}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"udgs",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{udgId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Report",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/reports/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reports",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Copy to UDG",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/reports/copyToUdg",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reports",
+								"copyToUdg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{URL}}/reports/delete?id={{reportId}}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"reports",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "{{reportId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Backup / Restore results",
+			"item": [
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/baresult/get",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"baresult",
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Backup / Restore objects",
+			"item": [
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/baobject/get?baResultId=?",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"baobject",
+								"get"
+							],
+							"query": [
+								{
+									"key": "baResultId",
+									"value": "?"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Backup / Restore messages",
+			"item": [
+				{
+					"name": "Get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/baobjectdetails/get?baResultId=?&baObjectId=?",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"baobjectdetails",
+								"get"
+							],
+							"query": [
+								{
+									"key": "baResultId",
+									"value": "?"
+								},
+								{
+									"key": "baObjectId",
+									"value": "?"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project / Schedules",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/baproject/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"baproject",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\": \"activate example using rest\",\r\n    \"domainName\": \"*\",\r\n    \"nodeName\": \"*\",\r\n    \"serverName\": \"ISPP\",\r\n    \"projectName\": \"vmware_*\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/baproject/activate-baproject",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"baproject",
+								"activate-baproject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deactivate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/baproject/deactivate-baproject",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"baproject",
+								"deactivate-baproject"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Server / Devices",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/datasource/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"datasource",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nodes / Clients / VMs",
+			"item": [
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/banode/list",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"banode",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/banode/activate-banode",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"banode",
+								"activate-banode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serverNameFilter\": \"*\",\r\n    \"domainNameFilter\": \"*\",\r\n    \"nodeNameFilter\": \"restTest-3001\",\r\n    \"contactFilter\": \"*\",\r\n    \"custom1\": \"${logical_name}\",\r\n    \"custom2\": \"${display_name}\",\r\n    \"custom3\": \"${type}\",\r\n    \"custom4\": \"${status}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/banode/update",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"banode",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deactivate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/banode/deactivate-banode",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"banode",
+								"deactivate-banode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Security",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Get Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/security/user",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"user"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get User",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/security/user/3",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"user",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Modify User",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roles\": [1,2]\r\n}"
+								},
+								"url": {
+									"raw": "{{URL}}/security/user/{{userId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"user",
+										"{{userId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Role",
+					"item": [
+						{
+							"name": "Get Roles",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/security/role",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"role"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Role",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/security/role/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"role",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add  Role",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roleId\":22,\r\n    \"deviceGroupId\": 1\r\n}"
+								},
+								"url": {
+									"raw": "{{URL}}/security/role",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"role"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Role",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/security/role/{{roleId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"role",
+										"{{roleId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Group",
+					"item": [
+						{
+							"name": "Get Groups",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/security/group",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"group"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Group",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/security/group/11",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"group",
+										"11"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Group",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Admin\",\r\n    \"description\": \"AD Group for admins\",\r\n    \"directoryAlias\": \"alias\"\r\n}"
+								},
+								"url": {
+									"raw": "{{URL}}/security/group",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"group"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Group",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/security/group/{{groupId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"group",
+										"{{groupId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Modify Group",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"roleIds\": [1,2]\r\n}"
+								},
+								"url": {
+									"raw": "{{URL}}/security/group/{{groupId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"security",
+										"group",
+										"{{groupId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Datasource Group",
+			"item": [
+				{
+					"name": "Servergroup",
+					"item": [
+						{
+							"name": "Get Servergroups",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/group/server",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"group",
+										"server"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Servergroup",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/group/server/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"group",
+										"server",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Servergroup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"IBM Tapas\",\r\n    \"entries\":[{\r\n                \"activeCheckType\": 2,\r\n                \"namePattern\": \"IBM\",\r\n                \"timeZonePattern\": \"\",\r\n                \"dataSourceClassPattern\": \"ISP\"\r\n            }]\r\n}"
+								},
+								"url": {
+									"raw": "{{URL}}/group/server",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"group",
+										"server"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Servergroup",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/group/server/{{groupId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"group",
+										"server",
+										"{{groupId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Modify Servergroup",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/group/server/{{groupId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"group",
+										"server",
+										"{{groupId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Devicegroup",
+					"item": [
+						{
+							"name": "Get Devicegroups",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/group/device",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"group",
+										"device"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Devicegroup",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/group/device/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"group",
+										"device",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Devicegroup",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"IBM Tapas\",\r\n    \"entries\":[{\r\n                \"activeCheckType\": 2,\r\n                \"namePattern\": \"IBM-TS3310-165\",\r\n                \"descPattern\": \"IBM-TS3310-165\",\r\n                \"timeZonePattern\": \"\",\r\n                \"dataSourceClassPattern\": \"IBM Tape Library\"\r\n            }]\r\n}"
+								},
+								"url": {
+									"raw": "{{URL}}/group/device",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"group",
+										"device"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Devicegroup",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/group/device/{{groupId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"group",
+										"device",
+										"{{groupId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Modify Devicegroup",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/group/device/{{groupId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"group",
+										"device",
+										"{{groupId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Config",
+			"item": [
+				{
+					"name": "RMAN",
+					"item": [
+						{
+							"name": "Get RMAN Catalog Configs",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/config/rman",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"config",
+										"rman"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get RMAN Catalog Config",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/config/rman/49181929",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"config",
+										"rman",
+										"49181929"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Test RMAN Catalog Config",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/config/rman/39215036/connectiontest",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"config",
+										"rman",
+										"39215036",
+										"connectiontest"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Active RMAN Catalog Config",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/config/rman/{{rmanId}}?active=false",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"config",
+										"rman",
+										"{{rmanId}}"
+									],
+									"query": [
+										{
+											"key": "active",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add RMAN Catalog Config",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user\": \"rman\",\r\n    \"password\": \"rman\",\r\n    \"connectionString\": \"jdbc:oracle:thin:@192.168.111.1:1521:orcl\",\r\n    \"active\": true\r\n}"
+								},
+								"url": {
+									"raw": "{{URL}}/config/rman",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"config",
+										"rman"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete RMAN Catalog Config",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/config/rman/{{rmanId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"config",
+										"rman",
+										"{{rmanId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Modify RMAN Catalog Config",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"active\": false\r\n}"
+								},
+								"url": {
+									"raw": "{{URL}}/config/rman/{{rmanId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"config",
+										"rman",
+										"{{rmanId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Connection Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/connection-test",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"connection-test"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "admin",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "SERVER",
+			"value": "192.168.111.1"
+		},
+		{
+			"key": "PORT",
+			"value": "10987"
+		},
+		{
+			"key": "URL",
+			"value": "https://{{SERVER}}:{{PORT}}/api/rest"
+		}
+	]
+}
